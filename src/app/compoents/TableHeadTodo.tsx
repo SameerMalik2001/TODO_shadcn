@@ -12,13 +12,13 @@ const TableHeadTodo = ({checkAll, checkAllState, setCheckAllState }:TableHeadTod
   return (
     <TableHeader>
       <TableRow>
-        <TableHead className="w-[100px]"><Checkbox checked={checkAllState} onCheckedChange={(e)=> checkAll(e)} className=''></Checkbox></TableHead>
-        <TableHead className="w-[100px]">#</TableHead>
-        <TableHead>TEXT</TableHead>
-        <TableHead className="text-right">Created Date</TableHead>
-        <TableHead className="text-right">Updated Date</TableHead>
-        <TableHead className="text-center">Operations</TableHead>
-        <TableHead className="text-center">Delete</TableHead>
+        <TableHead className="min-w-[40px]"><Checkbox checked={checkAllState} onCheckedChange={(e)=> checkAll(e)} className=''></Checkbox></TableHead>
+        <TableHead className="min-w-[40px]">#</TableHead>
+        <TableHead className='min-w-[200px]'>TEXT</TableHead>
+        <TableHead className="text-right min-w-[110px]">Created Date</TableHead>
+        <TableHead className="text-right min-w-[110px]">Updated Date</TableHead>
+        <TableHead className="text-center min-w-[100px]">Operations</TableHead>
+        <TableHead className="text-center min-w-[100px]">Delete</TableHead>
       </TableRow>
     </TableHeader>
   )

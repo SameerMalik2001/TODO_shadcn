@@ -37,7 +37,6 @@ export default function Home() {
     }
   }
 
-  console.log(Todos);
 	return <div className='bg-white min-h-screen w-screen p-10 text-black'>
     <h1 className="font-[500] text-[28px]">TODO APPLICATION</h1>
 

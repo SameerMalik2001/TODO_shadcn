@@ -14,8 +14,6 @@ export const formatDate = (dateString: Date): string => {
   const seconds = date.getSeconds();
   const isAM = hours < 12;
 
-  console.log(hours, minutes, seconds, isAM);
-
   const formattedTime = `${String(hours % 12 || 12).padStart(2, "0")}:${String(
     minutes
   ).padStart(2, "0")}:${String(seconds).padStart(2, "0")} ${

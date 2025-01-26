@@ -72,7 +72,6 @@ const InputBox = ({setTodos, Todos, inputValue, setInputValue, editID, setEditID
     setError('')
   }
 
-  console.log(inputValue);
 
   return (
     <div className='flex gap-3'>
